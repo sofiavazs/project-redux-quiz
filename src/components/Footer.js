@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <>
       <footer>
-        <p>© 2020 Sofia Vaz Sousa <span role="img" aria-label="emoji">🦊</span></p>
+        <p>© 2020 Sofia Vaz Sousa - Foxes Group 1  <span role="img" aria-label="emoji">🦊</span></p>
         <p>
           <a href="https://www.linkedin.com/in/sofiavazsousa/" target="_blank" rel="noopener noreferrer">Linkedin</a>
               |
