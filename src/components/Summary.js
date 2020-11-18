@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { quiz } from '../reducers/quiz'
 
-export const Summary = ({ handleNextQuestion }) => {
+export const Summary = () => {
   const answers = useSelector((state) => state.quiz.answers)
   const dispatch = useDispatch()
 
@@ -12,7 +12,6 @@ export const Summary = ({ handleNextQuestion }) => {
   })
 
   const resetQuiz = () => {
-    handleNextQuestion(false)
     return dispatch(quiz.actions.restart())
   }
 
