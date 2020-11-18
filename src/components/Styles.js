@@ -20,3 +20,8 @@ export const QuestionText = styled.text`
 export const Progress = styled.div`
   margin-top: 5px;
 `
+export const SummaryText = styled.text`
+  font-size: 50px;
+  margin-left: 30px;
+
+`
