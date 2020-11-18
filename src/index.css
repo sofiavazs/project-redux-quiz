@@ -41,3 +41,36 @@ button:disabled {
   color: #366336;
   border: 1px ridge #366336;
 }
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  color: rgb(35, 189, 53);
+  margin: 6px;
+}
+
+footer a:link {
+  color: rgb(247, 247, 247);
+}
+
+footer a:visited {
+  color: rgb(160, 160, 162);
+}
+
+footer img {
+  width: 50px;
+}
+

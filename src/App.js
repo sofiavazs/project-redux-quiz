@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { Provider } from 'react-redux'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
-import { quiz } from 'reducers/quiz'
-import { CurrentQuestion } from 'components/CurrentQuestion'
-import { Status } from 'components/Status'
-import { Title } from 'components/Styles'
+import { quiz } from './reducers/quiz'
+import { CurrentQuestion } from './components/CurrentQuestion'
+import { Status } from './components/Status'
+import { Title } from './components/Styles'
+import { Footer } from './components/Footer'
 
 const reducer = combineReducers({
   quiz: quiz.reducer
@@ -24,6 +25,7 @@ export const App = () => {
       <Title>C:\&gt; Nerd Quiz!</Title>
       <CurrentQuestion buttonStatus={buttonStatus} handleNextQuestion={onNextQuestion} />
       <Status handleNextQuestion={onNextQuestion} />
+      <Footer />
     </Provider>
   )
 }

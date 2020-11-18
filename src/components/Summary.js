@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { SummaryText } from 'components/Styles'
 import { quiz } from '../reducers/quiz'
-import Congratulations from '../assets/congrats.jpg'
+import congratulations from '../assets/congrats.jpg'
 
 export const Summary = () => {
   const answers = useSelector((state) => state.quiz.answers)
@@ -19,7 +19,7 @@ export const Summary = () => {
 
   return (
     <section>
-      <img src={Congratulations} alt="congratulations icon" />
+      <img src={congratulations} alt="congratulations icon" />
       <div>
         <SummaryText>{correctAnswers.length} correct answers out of 5</SummaryText>
       </div>
